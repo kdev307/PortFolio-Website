@@ -1,0 +1,305 @@
+/*************************************/
+/* General CSS */
+/*************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+
+    /* Does NOT work on Safari */
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    font-size: 2.4rem;
+    color: #34406a;
+    background-color: #b2e7ff;
+    font-family: "Encode Sans SC", sans-serif;
+}
+
+a,
+button {
+    all: unset;
+    padding: auto;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.icons {
+    font-size: 3.6rem;
+}
+
+h1 {
+    font-size: 8.4rem;
+}
+
+p {
+    font-family: none;
+}
+
+button {
+    width: 10rem;
+    height: 3.2rem;
+    font-size: 1.6rem;
+    border-radius: 0.7rem;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+    border: none;
+    background: #3d3d3d;
+    color: #fff;
+    padding: 0.5rem;
+    margin: 2rem 1rem;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+button:hover {
+    filter: brightness(120%);
+    transform: scale(95%);
+    color: #3d3d3d;
+    background-color: #fff;
+    font-weight: 800;
+    transition: 0.5s all;
+}
+
+/*************************************/
+/* HEADER Section */
+/*************************************/
+
+.header {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2.4rem 4.8rem;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    position: relative;
+}
+
+.sticky .header {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(255, 255, 255, 0.97);
+    z-index: 999;
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .section-hero {
+    margin-top: 9.6rem;
+}
+
+.main-nav-list,
+.profile-nav-list {
+    display: flex;
+    position: relative;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3.2rem;
+}
+
+#name {
+    font-size: 4rem;
+}
+
+.section-hero,
+.section-about-me,
+.section-works,
+.section-profiles,
+.section-contact {
+    padding: 4.8rem;
+    padding-top: 5.6rem;
+}
+
+.section-hero {
+    background-image: linear-gradient(180deg, #fff, #83d2f7);
+    padding-bottom: 24rem;
+}
+
+.hero-text {
+    text-align: center;
+    line-height: 10rem;
+    margin-top: 9.6rem;
+}
+
+/*************************************/
+/* ABOUT ME Section */
+/*************************************/
+
+.section-about-me > .sub-heading {
+    font-size: 4rem;
+    text-align: right;
+    padding: 3.6rem 10.8rem;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 4rem;
+    text-align: justify;
+}
+.about-img {
+    width: 48rem;
+    height: 24rem;
+    visibility: hidden;
+}
+
+.about-text-box {
+    width: 50%;
+}
+
+.section-about-me {
+    padding-bottom: 12rem;
+}
+
+/*************************************/
+/* PROJECTS Section */
+/*************************************/
+
+.section-works > .sub-heading {
+    text-align: center;
+    font-size: 4rem;
+    padding: 3.6rem 0;
+}
+
+.projects-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    text-align: center;
+    column-gap: 2.4rem;
+    left: 0;
+}
+
+.project-img {
+    width: 10rem;
+    height: 10rem;
+}
+
+.project-card {
+    border: 2px solid #34406a;
+    border-radius: 1.5rem;
+    margin: 3.6rem;
+    width: auto;
+    height: auto;
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.326);
+    transition: 0.5s all;
+}
+
+.project-card:hover {
+    transform: scale(1.2);
+    transition: 0.5s all;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.section-works {
+    padding-bottom: 12rem;
+}
+
+/*************************************/
+/* PROFILES Section */
+/*************************************/
+
+.section-profiles > .sub-heading {
+    font-size: 4rem;
+    padding: 3.6rem 10.8rem;
+}
+
+.profile-container-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-card {
+    border: 2px solid #34406a;
+    border-radius: 1.5rem;
+    transition: 0.5s all;
+    opacity: 0.75;
+    text-align: center;
+    padding: 2.4rem;
+    padding-top: 4.8rem;
+    background-image: linear-gradient(135deg, #fff, #fff, #b2e7ff, #b2e7ff, #b2e7ff, #fff, #fff);
+    box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.326);
+}
+
+.profile-card:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    transition: 0.5s all;
+}
+
+.profile-img {
+    overflow: hidden;
+    border-radius: 50%;
+    /* max-width: 100%;
+    height: auto; */
+    width: 32rem;
+    height: 32rem;
+    object-fit: contain;
+    margin-bottom: 1.2rem;
+}
+
+.section-profiles {
+    padding-bottom: 16rem;
+}
+
+/*************************************/
+/* FOOTER Section */
+/*************************************/
+
+.footer > .sub-heading {
+    text-align: center;
+    font-size: 4rem;
+    padding: 3.6rem 10.8rem;
+}
+
+.footer {
+    background-color: #34406a;
+    color: #b2e7ff;
+}
+
+.footer-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 3.2rem;
+    border-bottom: 0.2rem solid #ffffff;
+}
+
+.footer-box .profile-container-list {
+    gap: 10rem;
+}
+
+.copy {
+    font-size: 2rem;
+}
+
+.credit {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 700;
+    padding: 2.4rem 0;
+    color: #b2e7ff;
+}
