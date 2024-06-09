@@ -10,6 +10,10 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap"
+        />
         <link rel="stylesheet" href="style.css" />
         <title>DEV KUMAR</title>
     </head>
@@ -22,6 +26,7 @@
                     <li><a href="#aboutme" class="main-nav-link">About Me</a></li>
                     <li><a href="#works" class="main-nav-link">Works</a></li>
                     <li><a href="#profiles" class="main-nav-link">Profiles</a></li>
+                    <li><a href="#resume" class="main-nav-link">Resume</a></li>
                     <li><a href="#contact" class="main-nav-link">Contact</a></li>
                 </ul>
             </nav>
@@ -46,7 +51,7 @@
                 <div class="hero-text">
                     Welcome to my PortFolio ! I'm
                     <br />
-                    <h1>Dev Kumar</h1>
+                    <h1 id="hero-name">Dev Kumar</h1>
                     learning MERN Stack Development
                 </div>
             </section>
@@ -54,7 +59,7 @@
                 <h2 class="sub-heading">About Me</h2>
                 <div class="about-container">
                     <div class="about-img-box">
-                        <img src="" alt="" class="about-img" />
+                        <img src="/images/profile-logo.jpg" alt="img" class="about-img" />
                     </div>
                     <div class="about-text-box">
                         <p class="about-text">
@@ -76,105 +81,207 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                 </div>
             </section>
             <section class="section-works" id="works">
-                <h2 class="sub-heading">Projects</h2>
+                <h2 class="sub-heading">What Things I've Done Till Now</h2>
                 <div class="project-container">
                     <ul class="projects-box">
                         <!-- Project 1 -->
-                        <div class="project-card">
-                            <img src="" alt="" class="project-img" />
-                            <h3 class="project-heading">DfitKlub E-commerce</h3>
-                            <p class="project-description"></p>
+                        <div class="project-card webApp">
+                            <div class="project-img-box">
+                                <img
+                                    src="/images/dfitklub-fsd.png"
+                                    alt="DfitKlub E-commerce Landing Page"
+                                    class="project-img"
+                                />
+                            </div>
+                            <div class="project-text-box">
+                                <h3 class="project-heading">DfitKlub E-commerce</h3>
+                                <div class="skill-tag">
+                                    <span class="tag tag--html-css">HTML & CSS</span>
+                                    <span class="tag tag--js">JS</span>
+                                    <span class="tag tag--ejs">EmbeddedJS</span>
+                                    <span class="tag tag--expressjs">ExpressJS</span>
+                                    <span class="tag tag--mysql">MySQL</span>
+                                    <span class="tag tag--git-github">Git & GutHub</span>
+                                </div>
+                                <p class="project-description">
+                                    DfitKlub is a straightforward, comprehensive web project
+                                    designed to offer e-commerce services to a fictional
+                                    organization with the same name. The website is intuitive and
+                                    user-centric.
+                                </p>
+                            </div>
+
                             <div class="project-buttons-box">
                                 <a
                                     href="https://www.linkedin.com/posts/kdev307_fullstack-webdevelopment-learninganddevelopment-activity-7186211808230150144-8L-J?utm_source=share&utm_medium=member_desktop"
                                     target="_blank"
-                                    ><button>Demo Video</button></a
+                                    ><button class="project-btn">Demo Video</button></a
                                 >
                                 <a href="https://github.com/kdev307/DfitKlub-fsd" target="_blank"
-                                    ><button>Code</button></a
+                                    ><button class="project-btn">Code</button></a
                                 >
                             </div>
                         </div>
 
                         <!-- Project 2 -->
-                        <div class="project-card">
-                            <img src="" alt="" class="project-img" />
-                            <h3 class="project-heading">DfitKlub Landing Page</h3>
-                            <p class="project-description"></p>
+                        <div class="project-card single-page-website">
+                            <div class="project-img-box">
+                                <img
+                                    src="/images/dfitklub.png"
+                                    alt="DfitKlub Logo"
+                                    class="project-img"
+                                />
+                            </div>
+                            <div class="project-text-box">
+                                <h3 class="project-heading">DfitKlub Landing Page</h3>
+                                <div class="skill-tag">
+                                    <span class="tag tag--html-css">HTML & CSS</span>
+                                    <span class="tag tag--git-github">Git & GutHub</span>
+                                </div>
+                                <p class="project-description">
+                                    Landing page of the mentioned full stack web application
+                                </p>
+                            </div>
+
                             <div class="project-buttons-box">
                                 <a href="https://kdev307.github.io/DfitKlub/" target="_blank"
-                                    ><button>Live Demo</button></a
+                                    ><button class="project-btn">Live Demo</button></a
                                 >
                                 <a href="https://github.com/kdev307/DfitKlub" target="_blank"
-                                    ><button>Code</button></a
+                                    ><button class="project-btn">Code</button></a
                                 >
                             </div>
                         </div>
 
                         <!-- Project 3 -->
-                        <div class="project-card project2">
-                            <img src="" alt="" class="project-img" />
-                            <h3 class="project-heading">PortFolio Website</h3>
-                            <p class="project-description"></p>
+                        <div class="project-card single-page-website">
+                            <div class="project-img-box">
+                                <img
+                                    src="/images/portfolio.png"
+                                    alt="PortFolio Website"
+                                    class="project-img"
+                                />
+                            </div>
+                            <div class="project-text-box">
+                                <h3 class="project-heading">PortFolio Website</h3>
+                                <div class="skill-tag">
+                                    <span class="tag tag--html-css">HTML & CSS</span>
+                                    <span class="tag tag--js">JS</span>
+                                    <span class="tag tag--git-github">Git & GutHub</span>
+                                </div>
+                                <p class="project-description">
+                                    Designed a simple portfolio website using HTML, CSS and
+                                    JavaScript
+                                </p>
+                            </div>
+
                             <div class="project-buttons-box">
                                 <a href="https://kdev307.github.io/" target="_blank"
-                                    ><button>Live Demo</button></a
+                                    ><button class="project-btn">Live Demo</button></a
                                 >
                                 <a href="https://github.com/kdev307/" target="_blank"
-                                    ><button>Code</button></a
+                                    ><button class="project-btn">Code</button></a
                                 >
                             </div>
                         </div>
 
                         <!-- Project 4 -->
                         <div class="project-card">
-                            <img src="" alt="" class="project-img" />
-                            <h3 class="project-heading">Gallery Templates</h3>
-                            <p class="project-description"></p>
+                            <div class="project-img-box single-page-website">
+                                <img src="images/omnifood.png" alt="OmniFood" class="project-img" />
+                            </div>
+                            <div class="project-text-box">
+                                <h3 class="project-heading">OmniFood</h3>
+                                <div class="skill-tag">
+                                    <span class="tag tag--html-css">HTML & CSS</span>
+                                    <span class="tag tag--js">JS</span>
+                                    <span class="tag tag--git-github">Git & GutHub</span>
+                                </div>
+                                <p class="project-description">
+                                    Omnifood is a smart food subscription platform which helps the
+                                    user with healthy eating using it's AI-centric approach .
+                                </p>
+                            </div>
+
                             <div class="project-buttons-box">
-                                <a
-                                    href="https://kdev307.github.io/gallery-templates/"
-                                    target="_blank"
-                                    ><button>Live Demo</button></a
+                                <a href="https://kdev307.github.io/Omnifood/" target="_blank"
+                                    ><button class="project-btn">Live Demo</button></a
                                 >
-                                <a
-                                    href="https://github.com/kdev307/gallery-templates"
-                                    target="_blank"
-                                    ><button>Code</button></a
+                                <a href="https://github.com/kdev307/Omnifood" target="_blank"
+                                    ><button class="project-btn">Code</button></a
                                 >
                             </div>
                         </div>
 
                         <!-- Project 5 -->
                         <div class="project-card">
-                            <img src="" alt="" class="project-img" />
-                            <h3 class="project-heading">OmniFood</h3>
-                            <p class="project-description"></p>
+                            <div class="project-img-box">
+                                <img
+                                    src="images/picshells.png"
+                                    alt="PicShells"
+                                    class="project-img"
+                                />
+                            </div>
+                            <div class="project-text-box">
+                                <h3 class="project-heading">PicShells</h3>
+                                <div class="skill-tag">
+                                    <span class="tag tag--html-css">HTML & CSS</span>
+                                    <span class="tag tag--jQuery">jQuery</span>
+                                    <span class="tag tag--git-github">Git & GutHub</span>
+                                </div>
+                                <p class="project-description">
+                                    PicSehlls is an image gallery consisting certain images with the
+                                    feature of image filtering.
+                                </p>
+                            </div>
+
                             <div class="project-buttons-box">
-                                <a href="https://kdev307.github.io/Omnifood/" target="_blank"
-                                    ><button>Live Demo</button></a
+                                <a href="https://kdev307.github.io/PichShells/" target="_blank"
+                                    ><button class="project-btn">Live Demo</button></a
                                 >
-                                <a href="https://github.com/kdev307/Omnifood" target="_blank"
-                                    ><button>Code</button></a
+                                <a href="https://github.com/kdev307/PichShells" target="_blank"
+                                    ><button class="project-btn">Code</button></a
                                 >
                             </div>
                         </div>
 
                         <!-- Project 6 -->
                         <div class="project-card">
-                            <img src="" alt="" class="project-img" />
-                            <h3 class="project-heading">PicShells</h3>
-                            <p class="project-description"></p>
+                            <div class="project-img-box">
+                                <img
+                                    src="/images/templates.png"
+                                    alt="Gallery Templates"
+                                    class="project-img"
+                                />
+                            </div>
+                            <div class="project-text-box">
+                                <h3 class="project-heading">Gallery Templates</h3>
+                                <div class="skill-tag">
+                                    <span class="tag tag--html-css">HTML & CSS</span>
+                                    <span class="tag tag--git-github">Git & GutHub</span>
+                                </div>
+                                <p class="project-description">
+                                    Designed multiple Gallery Templates using the CSS Grid concepts.
+                                </p>
+                            </div>
+
                             <div class="project-buttons-box">
-                                <a href="https://kdev307.github.io/PichShells/" target="_blank"
-                                    ><button>Live Demo</button></a
+                                <a
+                                    href="https://kdev307.github.io/gallery-templates/"
+                                    target="_blank"
+                                    ><button class="project-btn">Live Demo</button></a
                                 >
-                                <a href="https://github.com/kdev307/PichShells" target="_blank"
-                                    ><button>Code</button></a
+                                <a
+                                    href="https://github.com/kdev307/gallery-templates"
+                                    target="_blank"
+                                    ><button class="project-btn">Code</button></a
                                 >
                             </div>
                         </div>
                     </ul>
+                    <pre class="additional-info">
+* WebApp : Full Stack Web Application. SPW : Single Page Website (Landing Page). </pre
+                    >
                 </div>
             </section>
             <section class="section-profiles" id="profiles">
@@ -186,7 +293,7 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                             <div class="profile-card">
                                 <div class="profile-img-box">
                                     <img
-                                        src="/images/profile-logo.jpg"
+                                        src="images/geeksforgeeks.jpg"
                                         alt="GeeksforGeeks Profile Image"
                                         class="profile-img"
                                     />
@@ -204,7 +311,7 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                             <div class="profile-card">
                                 <div class="profile-img-box">
                                     <img
-                                        src="/images/profile-logo.jpg"
+                                        src="images/leetcode.jpg"
                                         alt="LeetCode Profile Image"
                                         class="profile-img"
                                     />
@@ -222,7 +329,7 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                             <div class="profile-card">
                                 <div class="profile-img-box">
                                     <img
-                                        src="/images/profile-logo.jpg"
+                                        src="/images/hackerrank.png"
                                         alt="HackerRank Profile Image"
                                         class="profile-img"
                                     />
@@ -234,6 +341,16 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                         </a>
                     </li>
                 </ul>
+            </section>
+            <section class="section-resume-download" id="resume">
+                <h2 class="sub-heading">My Resume</h2>
+                <div class="resume-container">
+                    <button class="download-btn">
+                        <a href="/DevKumar-Resume.pdf" download="DevKumar-Resume.pdf"
+                            >Download Now <i class="fa-solid fa-circle-down"></i
+                        ></a>
+                    </button>
+                </div>
             </section>
         </main>
         <footer class="footer" id="contact">
@@ -267,7 +384,12 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                         </a>
                     </li>
                 </ul>
-                <div class="copy">Copyright © 2024 by Dev Kumar. All rights are reserved.</div>
+                <div class="copy">
+                    <pre>
+                        Copyright © 2024 by Dev Kumar. 
+                        All rights are reserved.
+                    </pre>
+                </div>
             </div>
             <div class="credit">Crafted by KD</div>
         </footer>
