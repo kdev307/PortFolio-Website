@@ -14,7 +14,8 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap"
         />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+        <link rel="stylesheet" href="/stylesheets/media-queries.css" />
         <title>DEV KUMAR</title>
     </head>
     <body>
@@ -45,14 +46,18 @@
                     </li>
                 </ul>
             </nav>
+
+            <button class="btn-mobile-nav">
+                <i class="fa-solid fa-bars icon-mobile-nav" name="menu-outline"></i>
+                <i class="fa-solid fa-xmark icon-mobile-nav" name="close-outline"></i>
+            </button>
         </header>
         <main>
             <section class="section-hero" id="home">
                 <div class="hero-text">
-                    Welcome to my PortFolio ! I'm
-                    <br />
+                    <p class="hero-other-text">Welcome to my PortFolio ! I'm</p>
                     <h1 id="hero-name">Dev Kumar</h1>
-                    learning MERN Stack Development
+                    <p class="hero-other-text">learning MERN Stack Development</p>
                 </div>
             </section>
             <section class="section-about-me" id="aboutme">
@@ -68,15 +73,11 @@
                             final year BTech CE student from Poornima University. Check out the
                             complete portfolio for my projects and coding journey.
                         </p>
-
-                        <pre>
-
-
-Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS, 
-    Git & GitHub, Python (Basic), MySQL & MySQL WorkBench, 
-    JAVA (Basic) and React(Learning)
-                            </pre
-                        >
+                        <p class="skills">
+                            Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS, Git & GitHub,
+                            Python (Basic), MySQL & MySQL WorkBench, JAVA (Basic) and
+                            React(Learning)
+                        </p>
                     </div>
                 </div>
             </section>
@@ -104,10 +105,9 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                                     <span class="tag tag--git-github">Git & GutHub</span>
                                 </div>
                                 <p class="project-description">
-                                    DfitKlub is a straightforward, comprehensive web project
-                                    designed to offer e-commerce services to a fictional
-                                    organization with the same name. The website is intuitive and
-                                    user-centric.
+                                    Designed and Developed from scratch, a full-stack web
+                                    application, providing e-commerce related services to a
+                                    fictional organization DfitKlub.
                                 </p>
                             </div>
 
@@ -139,7 +139,8 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                                     <span class="tag tag--git-github">Git & GutHub</span>
                                 </div>
                                 <p class="project-description">
-                                    Landing page of the mentioned full stack web application
+                                    Designed and Developed from scratch, this is the Landing Page of
+                                    the mentioned full-stack web application.
                                 </p>
                             </div>
 
@@ -170,8 +171,8 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                                     <span class="tag tag--git-github">Git & GutHub</span>
                                 </div>
                                 <p class="project-description">
-                                    Designed a simple portfolio website using HTML, CSS and
-                                    JavaScript
+                                    Designed and Developed from scratch, a simple portfolio website
+                                    showcasing my skills and expertise..
                                 </p>
                             </div>
 
@@ -198,8 +199,8 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                                     <span class="tag tag--git-github">Git & GutHub</span>
                                 </div>
                                 <p class="project-description">
-                                    Omnifood is a smart food subscription platform which helps the
-                                    user with healthy eating using it's AI-centric approach .
+                                    Developed a responsive landing page of a fictional organization
+                                    OmniFood using HTML, CSS and JavaScript.
                                 </p>
                             </div>
 
@@ -279,9 +280,10 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                             </div>
                         </div>
                     </ul>
-                    <pre class="additional-info">
-* WebApp : Full Stack Web Application. SPW : Single Page Website (Landing Page). </pre
-                    >
+                    <p class="additional-info">
+                        * WebApp : Full Stack Web Application | SPW : Single Page Website (Landing
+                        Page).
+                    </p>
                 </div>
             </section>
             <section class="section-profiles" id="profiles">
@@ -385,13 +387,13 @@ Skills : C/C++, HTML5, CSS3, JS, ExpressJS, EmbeddedJS,
                     </li>
                 </ul>
                 <div class="copy">
-                    <pre>
-                        Copyright © 2024 by Dev Kumar. 
-                        All rights are reserved.
+                    <pre>Copyright © <span class="year">2024</span> by Dev Kumar. 
+    All rights are reserved.
                     </pre>
                 </div>
             </div>
             <div class="credit">Crafted by KD</div>
         </footer>
     </body>
+    <script src="script.js"></script>
 </html>

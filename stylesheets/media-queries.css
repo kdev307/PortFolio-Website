@@ -1,0 +1,174 @@
+/*************************************/
+/* Below 1344 px (Smaller Desktops) */
+/*************************************/
+
+@media only screen and (max-width: 84em) {
+    /* NO CSS Changes Required */
+}
+
+/*************************************/
+/* Below 1200 px (Landscape Tablets) */
+/*************************************/
+
+@media only screen and (max-width: 75em) {
+    /* NO CSS Changes Required */
+}
+
+/*************************************/
+/* Below 944 px (Tablets) */
+/*************************************/
+
+@media only screen and (max-width: 59em) {
+    html {
+        font-size: 50%;
+    }
+
+    .projects-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .btn-mobile-nav {
+        display: block;
+        z-index: 999;
+    }
+
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    .webApp ::after,
+    .single-page-website::after {
+        right: -14%;
+    }
+}
+
+/* MOBILE NAVIGATION */
+
+/*************************************/
+/* Below 704 px (Smaller Tablets) */
+/*************************************/
+
+@media only screen and (max-width: 44em) {
+    .section-about-me > .sub-heading {
+        text-align: center;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 3.6rem;
+    }
+
+    .about-text-box {
+        width: 100%;
+    }
+
+    .projects-box {
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-card {
+        width: 50%;
+    }
+
+    .webApp::after,
+    .single-page-website::after {
+        right: -16%;
+    }
+
+    .section-profiles > .sub-heading {
+        text-align: center;
+        /* font-size: 3.6rem; */
+    }
+
+    .profile-container-list {
+        flex-direction: column;
+        gap: 3.6rem;
+    }
+
+    .download-btn {
+        font-size: 2.4rem;
+    }
+
+    .footer-box > .profile-container-list {
+        grid-row-start: 1;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .copy {
+        font-size: 1.6rem;
+    }
+}
+
+/*************************************/
+/* Below 544 px (Phones) */
+/*************************************/
+
+@media only screen and (max-width: 34em) {
+    .sub-heading {
+        font-size: 3.2rem;
+    }
+
+    .project-card {
+        width: 75%;
+    }
+
+    .webApp::after {
+        right: -18%;
+        top: 4%;
+    }
+    .single-page-website::after {
+        top: 4%;
+        right: -14%;
+    }
+
+    .footer-box {
+        gap: 10rem;
+        justify-content: flex-;
+        font-size: 2.4rem;
+    }
+
+    .footer-box .profile-container-list {
+        gap: 4.8rem;
+    }
+    .download-btn {
+        font-size: 1.8rem;
+    }
+}

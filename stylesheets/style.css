@@ -2,8 +2,6 @@
 /* General CSS */
 /*************************************/
 
-@import url("");
-
 * {
     padding: 0;
     margin: 0;
@@ -12,7 +10,6 @@
 
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
 
     /* Does NOT work on Safari */
     /* scroll-behavior: smooth; */
@@ -23,6 +20,8 @@ body {
     color: #34406a;
     background-color: #b2e7ff;
     font-family: "Encode Sans SC", sans-serif;
+    overflow-x: hidden;
+    font-weight: 500;
 }
 
 a,
@@ -41,7 +40,7 @@ ul {
 }
 
 p {
-    font-family: none;
+    font-family: sans-serif;
 }
 
 /*************************************/
@@ -57,6 +56,7 @@ p {
     height: 9.6rem;
     padding: 0 4.8rem;
     position: relative;
+    gap: 2.4rem;
 }
 
 .sticky .header {
@@ -86,10 +86,55 @@ p {
     gap: 3.2rem;
 }
 
+.main-nav-link:link,
+.main-nav-link:visited,
+.icons:link,
+.icons:visited {
+    display: inline-block;
+    text-decoration: none;
+    /* color: #333; */
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active,
+.icons:hover,
+.icons:active {
+    color: #0062bd;
+}
+
+/* MOBILE */
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+.icon-mobile-nav {
+    height: 4.8rem;
+    width: 4.8rem;
+    color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+    display: none;
+}
+
 #name {
     font-size: 4rem;
     font-weight: 700;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.326);
+}
+
+/*************************************/
+/* HERO Section */
+/*************************************/
+
+.hero-other-text {
+    font-family: "Encode Sans SC", sans-serif;
 }
 
 #hero-name {
@@ -104,30 +149,30 @@ p {
 @keyframes moving-text {
     /* 0% {
         background-image: linear-gradient(45deg, #ff5733, #33ff57, #5733ff, #33ffff, #ff33f5);
-    }
-    25% {
-        background-image: linear-gradient(45deg, #ff33f5, #ff5733, #33ff57, #5733ff, #33ffff);
-    }
-    50% {
-        background-image: linear-gradient(45deg, #33ffff, #ff33f5 #ff5733, #33ff57, #5733ff);
-    }
-    75% {
-        background-image: linear-gradient(45deg, #5733ff, #33ffff, #ff33f5, #ff5733, #33ff57);
-    }
-    100% {
-        background-image: linear-gradient(45deg, #33ff57, #5733ff, #33ffff, #ff33f5, #ff5733);
-    } */
+        }
+        25% {
+            background-image: linear-gradient(45deg, #ff33f5, #ff5733, #33ff57, #5733ff, #33ffff);
+            }
+            50% {
+                background-image: linear-gradient(45deg, #33ffff, #ff33f5 #ff5733, #33ff57, #5733ff);
+                }
+                75% {
+                    background-image: linear-gradient(45deg, #5733ff, #33ffff, #ff33f5, #ff5733, #33ff57);
+                    }
+                    100% {
+                        background-image: linear-gradient(45deg, #33ff57, #5733ff, #33ffff, #ff33f5, #ff5733);
+                        } */
     /* 0% {
-        background-color: #ff5733;
-    }
-    25% {
-        background-color: #33ff57;
-    }
-    50% {
-        background-color: #00ced1;
-    }
-    75% {
-        background-color: #33ff57;
+                            background-color: #ff5733;
+                            }
+                            25% {
+                                background-color: #33ff57;
+                                }
+                                50% {
+                                    background-color: #00ced1;
+                                    }
+                                    75% {
+                                        background-color: #33ff57;
     }
     100% {
         background-color: #ff5733;
@@ -203,6 +248,11 @@ p {
     width: 50%;
 }
 
+.skills {
+    padding-top: 2.4rem;
+    font-family: "Encode Sans SC", sans-serif;
+}
+
 .section-about-me {
     padding-bottom: 12rem;
 }
@@ -232,6 +282,7 @@ p {
     margin: 3.6rem;
     width: auto;
     /* height: 54rem; */
+    position: relative;
     box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.326);
     transition: 0.5s all;
     overflow: hidden;
@@ -254,15 +305,26 @@ p {
 .single-page-website::after {
     content: "SPW";
     position: absolute;
-    top: 4%;
+    top: 5%;
     right: -18%;
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 700;
     color: #333;
-    background-color: #3bff6c;
+    background-color: #7cff3b;
     padding: 0.8rem 8rem;
     transform: rotate(45deg);
+    /* content: "Single Page Website";
+    position: absolute;
+    top: 78%;
+    right: 0;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #7cff3b;
+    padding: 0.4rem 4rem;
+    width: 32rem; */
 }
 
 .project-card:hover {
@@ -277,13 +339,9 @@ p {
     border-bottom: 2px solid #34406a;
 }
 
-.profile-img-box {
-    border-radius: 2.4rem;
-}
-
 .project-text-box {
     padding: 0.8rem;
-    height: 24rem;
+    height: 26rem;
 }
 
 .project-description {
@@ -373,6 +431,7 @@ p {
     padding: 2.4rem;
     padding-bottom: 0;
     text-align: center;
+    /* font-family: "Encode Sans SC", sans-serif; */
 }
 
 .section-works {
@@ -411,6 +470,10 @@ p {
     transform: scale(1.2);
     opacity: 1;
     transition: 0.5s all;
+}
+
+.profile-img-box {
+    border-radius: 2.4rem;
 }
 
 .profile-img {
