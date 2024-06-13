@@ -43,6 +43,21 @@ p {
     font-family: sans-serif;
 }
 
+.container {
+    width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.section-hero,
+.section-about-me,
+.section-works,
+.section-profiles,
+.section-contact {
+    padding: 4.8rem;
+    padding-top: 5.6rem;
+}
+
 /*************************************/
 /* HEADER Section */
 /*************************************/
@@ -133,6 +148,24 @@ p {
 /* HERO Section */
 /*************************************/
 
+.section-hero {
+    background-image: linear-gradient(180deg, #fff, #83d2f7);
+    padding: 7.2rem 0;
+    padding-bottom: 16.8rem;
+}
+
+.hero-text {
+    text-align: center;
+    line-height: 10rem;
+    margin-top: 9.6rem;
+}
+
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
 .hero-other-text {
     font-family: "Encode Sans SC", sans-serif;
 }
@@ -142,41 +175,45 @@ p {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    animation: moving-text 3s linear infinite;
+    animation: text-gradient-animation 3s linear infinite;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.326);
 }
 
-@keyframes moving-text {
-    /* 0% {
+/* @keyframes moving-text {
+    0% {
         background-image: linear-gradient(45deg, #ff5733, #33ff57, #5733ff, #33ffff, #ff33f5);
-        }
-        25% {
-            background-image: linear-gradient(45deg, #ff33f5, #ff5733, #33ff57, #5733ff, #33ffff);
-            }
-            50% {
-                background-image: linear-gradient(45deg, #33ffff, #ff33f5 #ff5733, #33ff57, #5733ff);
-                }
-                75% {
-                    background-image: linear-gradient(45deg, #5733ff, #33ffff, #ff33f5, #ff5733, #33ff57);
-                    }
-                    100% {
-                        background-image: linear-gradient(45deg, #33ff57, #5733ff, #33ffff, #ff33f5, #ff5733);
-                        } */
-    /* 0% {
-                            background-color: #ff5733;
-                            }
-                            25% {
-                                background-color: #33ff57;
-                                }
-                                50% {
-                                    background-color: #00ced1;
-                                    }
-                                    75% {
-                                        background-color: #33ff57;
+    }
+    25% {
+        background-image: linear-gradient(45deg, #ff33f5, #ff5733, #33ff57, #5733ff, #33ffff);
+    }
+    50% {
+        background-image: linear-gradient(45deg, #33ffff, #ff33f5 #ff5733, #33ff57, #5733ff);
+    }
+    75% {
+        background-image: linear-gradient(45deg, #5733ff, #33ffff, #ff33f5, #ff5733, #33ff57);
+    }
+    100% {
+        background-image: linear-gradient(45deg, #33ff57, #5733ff, #33ffff, #ff33f5, #ff5733);
+    }
+} */
+/* @keyframes moving-text {
+    0% {
+        background-color: #ff5733;
+    }
+    25% {
+        background-color: #33ff57;
+    }
+    50% {
+        background-color: #00ced1;
+    }
+    75% {
+        background-color: #33ff57;
     }
     100% {
         background-color: #ff5733;
-    } */
+    }
+} */
+@keyframes text-gradient-animation {
     0% {
         background-color: #f00;
     }
@@ -194,31 +231,15 @@ p {
     }
 }
 
-.section-hero,
-.section-about-me,
-.section-works,
-.section-profiles,
-.section-contact {
-    padding: 4.8rem;
-    padding-top: 5.6rem;
-}
-
-.section-hero {
-    background-image: linear-gradient(180deg, #fff, #83d2f7);
-    padding-bottom: 24rem;
-}
-
-.hero-text {
-    text-align: center;
-    line-height: 10rem;
-    margin-top: 9.6rem;
-}
-
 /*************************************/
 /* ABOUT ME Section */
 /*************************************/
 
-.section-about-me > .sub-heading {
+.section-about-me {
+    padding-bottom: 9.6rem;
+}
+
+.section-about-me > .container > .sub-heading {
     font-size: 4rem;
     text-align: right;
     padding: 3.6rem 10.8rem;
@@ -253,18 +274,22 @@ p {
     font-family: "Encode Sans SC", sans-serif;
 }
 
-.section-about-me {
-    padding-bottom: 12rem;
-}
-
 /*************************************/
 /* PROJECTS Section */
 /*************************************/
 
-.section-works > .sub-heading {
+.section-works {
+    padding-bottom: 8rem;
+}
+
+.section-works > .container > .sub-heading {
     text-align: center;
     font-size: 4rem;
     padding: 3.6rem 0;
+}
+
+.project-container {
+    padding-top: 2.4rem;
 }
 
 .projects-box {
@@ -273,14 +298,14 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
-    column-gap: 2.4rem;
+    /* column-gap: 2.4rem; */
 }
 
 .project-card {
     border: 2px solid #34406a;
     border-radius: 1.6rem;
     margin: 3.6rem;
-    width: auto;
+    width: 40rem;
     /* height: 54rem; */
     position: relative;
     box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.326);
@@ -378,13 +403,14 @@ p {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
 .tag {
     display: inline-block;
     padding: 0.4rem 0.8rem;
     margin: 0.4rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
     color: #333;
     border: 2px solid;
@@ -427,6 +453,10 @@ p {
     color: #fff;
 }
 
+.tag--resp {
+    background-color: #fff;
+}
+
 .additional-info {
     padding: 2.4rem;
     padding-bottom: 0;
@@ -434,23 +464,23 @@ p {
     /* font-family: "Encode Sans SC", sans-serif; */
 }
 
-.section-works {
-    padding-bottom: 8rem;
-}
-
 /*************************************/
 /* PROFILES Section */
 /*************************************/
 
-.section-profiles > .sub-heading {
+.section-profiles {
+    padding-bottom: 8rem;
+}
+
+.section-profiles > .container > .sub-heading {
     font-size: 4rem;
-    padding: 3.6rem 10.8rem;
+    padding: 3.6rem 7.2rem;
 }
 
 .profile-container-list {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 4.8rem 0;
 }
 
@@ -487,18 +517,18 @@ p {
     margin-bottom: 1.2rem;
 }
 
-.section-profiles {
-    padding-bottom: 8rem;
-}
-
 /*************************************/
 /* RESUME Section */
 /*************************************/
 
-.section-resume-download > .sub-heading {
+.section-resume-download {
+    padding-bottom: 8rem;
+}
+
+.section-resume-download > .container > .sub-heading {
     text-align: center;
     font-size: 4rem;
-    padding: 3.6rem 10.8rem;
+    padding: 3.6rem 0;
 }
 
 .resume-container {
@@ -523,15 +553,11 @@ p {
     transition: 1s all;
 }
 
-.section-resume-download {
-    padding-bottom: 8rem;
-}
-
 /*************************************/
 /* FOOTER Section */
 /*************************************/
 
-.footer > .sub-heading {
+.footer > .container > .sub-heading {
     text-align: center;
     font-size: 4rem;
     padding: 3.6rem 10.8rem;
@@ -546,7 +572,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 3.2rem;
+    padding: 0;
     /* border-bottom: 0.2rem solid #ffffff; */
 }
 
@@ -571,9 +597,35 @@ p {
 }
 
 .credit {
-    font-size: 3rem;
+    font-size: 3.2rem;
     text-align: center;
     font-weight: 700;
     padding: 1.6rem 0;
-    color: #b2e7ff;
+    /* color: #b2e7ff; */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: text-gradient 5s ease-in-out infinite;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.326);
+}
+
+@keyframes text-gradient {
+    0% {
+        background-image: linear-gradient(45deg, #ff5733, #33ff57, #33ffff, #ff33f5, #ff0);
+    }
+    20% {
+        background-image: linear-gradient(45deg, #33ff57, #33ffff, #ff33f5, #ff0, #ff5733);
+    }
+    40% {
+        background-image: linear-gradient(45deg, #33ffff, #ff33f5, #ff0, #ff5733, #33ff57);
+    }
+    60% {
+        background-image: linear-gradient(45deg, #ff33f5, #ff0, #ff5733, #33ff57, #33ffff);
+    }
+    80% {
+        background-image: linear-gradient(45deg, #ff0, #ff5733, #33ff57, #33ffff #ff33f5);
+    }
+    100% {
+        background-image: linear-gradient(45deg, #ff5733, #33ff57, #33ffff, #ff33f5, #ff0);
+    }
 }

@@ -2,16 +2,44 @@
 /* Below 1344 px (Smaller Desktops) */
 /*************************************/
 
-@media only screen and (max-width: 84em) {
-    /* NO CSS Changes Required */
+@media only screen and (min-width: 74em) and (max-width: 84em) {
+    .hero {
+        max-width: 120rem;
+    }
+    .header,
+    .section-hero,
+    .section-about-me,
+    .footer {
+        width: 60em;
+    }
+    .container {
+        width: 100%;
+    }
+    .projects-box {
+        padding-left: 9.6rem;
+    }
+    .profile-container-list {
+        padding-left: 8rem;
+    }
 }
 
 /*************************************/
 /* Below 1200 px (Landscape Tablets) */
 /*************************************/
 
-@media only screen and (max-width: 75em) {
-    /* NO CSS Changes Required */
+@media only screen and (min-width: 60em) and (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .projects-box {
+        padding-left: 10.8rem;
+    }
+
+    .profile-container-list {
+        padding-left: 12.8rem;
+        gap: 3.8rem;
+    }
 }
 
 /*************************************/
@@ -23,9 +51,33 @@
         font-size: 50%;
     }
 
+    .hero {
+        max-width: 80rem;
+    }
+
+    .header,
+    .section-hero,
+    .section-about-me,
+    .footer {
+        width: 50em;
+    }
+
+    .container {
+        width: 100%;
+    }
+
     .projects-box {
         grid-template-columns: 1fr 1fr;
     }
+
+    /* .additional-info {
+        font-size: 2.2rem;
+    } */
+    .profile-container-list {
+        padding-left: 3.2rem;
+    }
+
+    /* MOBILE NAVIGATION */
 
     .btn-mobile-nav {
         display: block;
@@ -75,8 +127,6 @@
     }
 }
 
-/* MOBILE NAVIGATION */
-
 /*************************************/
 /* Below 704 px (Smaller Tablets) */
 /*************************************/
@@ -94,17 +144,25 @@
     .about-text-box {
         width: 100%;
     }
+    .sub-heading {
+        font-size: 3.2rem;
+        text-align: center;
+    }
+    /* .project-container {
+    } */
 
     .projects-box {
-        /* grid-template-columns: 1fr; */
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        /* display: flex; */
+        /* flex-direction: column; */
+        padding-left: 1.2rem;
         align-items: center;
         justify-content: center;
     }
 
     .project-card {
-        width: 50%;
+        /* left: 5%; */
+        width: 75%;
     }
 
     .webApp::after,
@@ -126,14 +184,26 @@
         font-size: 2.4rem;
     }
 
+    .footer > .container {
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer-box > .profile-container-list {
         grid-row-start: 1;
         display: flex;
         flex-direction: row;
     }
 
+    .footer-box {
+        /* width: 34em; */
+        gap: 10rem;
+        /* justify-content: space-evenly; */
+        font-size: 2.4rem;
+    }
+
     .copy {
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 }
 
@@ -142,12 +212,36 @@
 /*************************************/
 
 @media only screen and (max-width: 34em) {
+    .hero {
+        max-width: 60rem;
+    }
+
+    .header,
+    .section-hero,
+    .section-about-me,
+    .footer {
+        width: 32em;
+    }
+    .container {
+        width: 100%;
+    }
+
     .sub-heading {
         font-size: 3.2rem;
+        padding: 0;
+    }
+
+    .projects-box {
+        width: 60rem;
+    }
+
+    .project-text-box {
+        font-size: x-large;
     }
 
     .project-card {
-        width: 75%;
+        align-items: center;
+        justify-content: center;
     }
 
     .webApp::after {
@@ -159,16 +253,11 @@
         right: -14%;
     }
 
-    .footer-box {
-        gap: 10rem;
-        justify-content: flex-;
-        font-size: 2.4rem;
-    }
-
     .footer-box .profile-container-list {
         gap: 4.8rem;
     }
     .download-btn {
-        font-size: 1.8rem;
+        font-size: 2.4rem;
+        width: 24rem;
     }
 }

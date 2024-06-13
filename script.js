@@ -18,7 +18,7 @@ btnNavEl.addEventListener("click", function () {
 ///////////////////////////////////////////////////////////
 // Fixing the Scrolling Effect
 
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll(".main-nav-link");
 allLinks.forEach(function (link) {
     link.addEventListener("click", function (e) {
         e.preventDefault();
