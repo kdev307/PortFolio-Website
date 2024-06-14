@@ -87,6 +87,12 @@ p {
     box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
 }
 
+#name {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.326);
+}
+
 .sticky .section-hero {
     margin-top: 9.6rem;
 }
@@ -136,12 +142,6 @@ p {
 
 .icon-mobile-nav[name="close-outline"] {
     display: none;
-}
-
-#name {
-    font-size: 4rem;
-    font-weight: 700;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.326);
 }
 
 /*************************************/

@@ -53,9 +53,9 @@
 
     /* .hero {
         max-width: 80rem;
-    } */
+    }
 
-    /* .header,
+    .header,
     .section-hero,
     .section-about-me,
     .section-works,
@@ -95,7 +95,7 @@
         left: 0;
         width: 100%;
         height: 100vh;
-        transform: translateX(100%);
+        /* transform: translateX(100%); */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -224,17 +224,17 @@
 
 @media only screen and (max-width: 34em) {
     .hero {
-        max-width: 50rem;
+        max-width: 60rem;
     }
 
     .header,
     .section-hero,
     .section-about-me,
+    .section-works,
+    .section-profiles,
+    .section-resume,
     .footer {
-        width: 28.8em;
-    }
-    .container {
-        width: 100%;
+        width: 29.8em;
     }
 
     .sub-heading {
