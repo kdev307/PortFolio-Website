@@ -9,6 +9,9 @@
     .header,
     .section-hero,
     .section-about-me,
+    .section-works,
+    .section-profiles,
+    .section-resume-download,
     .footer {
         width: 60em;
     }
@@ -232,7 +235,7 @@
     .section-about-me,
     .section-works,
     .section-profiles,
-    .section-resume,
+    .section-resume-download,
     .footer {
         width: 29.8em;
     }
