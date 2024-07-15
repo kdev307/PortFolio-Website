@@ -44,7 +44,7 @@ p {
 }
 
 .container {
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
     padding: 0 3.2rem;
 }
@@ -179,6 +179,24 @@ p {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.326);
 }
 
+@keyframes text-gradient-animation {
+    0% {
+        background-color: #f00;
+    }
+    25% {
+        background-color: #0f0;
+    }
+    50% {
+        background-color: #0091ff;
+    }
+    75% {
+        background-color: #0f0;
+    }
+    100% {
+        background-color: #f00;
+    }
+}
+
 /* @keyframes moving-text {
     0% {
         background-image: linear-gradient(45deg, #ff5733, #33ff57, #5733ff, #33ffff, #ff33f5);
@@ -213,23 +231,6 @@ p {
         background-color: #ff5733;
     }
 } */
-@keyframes text-gradient-animation {
-    0% {
-        background-color: #f00;
-    }
-    25% {
-        background-color: #0f0;
-    }
-    50% {
-        background-color: #0091ff;
-    }
-    75% {
-        background-color: #0f0;
-    }
-    100% {
-        background-color: #f00;
-    }
-}
 
 /*************************************/
 /* ABOUT ME Section */
@@ -239,10 +240,13 @@ p {
     padding-bottom: 9.6rem;
 }
 
-.section-about-me > .container > .sub-heading {
+.sub-heading {
     font-size: 4rem;
-    text-align: right;
     padding: 3.6rem 0;
+}
+
+.section-about-me > .container > .sub-heading {
+    text-align: right;
 }
 
 .about-container {
@@ -284,8 +288,6 @@ p {
 
 .section-works > .container > .sub-heading {
     text-align: center;
-    font-size: 4rem;
-    padding: 3.6rem 0;
 }
 
 .project-container {
@@ -468,11 +470,6 @@ p {
     padding-bottom: 8rem;
 }
 
-.section-profiles > .container > .sub-heading {
-    font-size: 4rem;
-    padding: 3.6rem 0;
-}
-
 .profile-container-list {
     display: flex;
     align-items: center;
@@ -523,8 +520,6 @@ p {
 
 .section-resume-download > .container > .sub-heading {
     text-align: center;
-    font-size: 4rem;
-    padding: 3.6rem 0;
 }
 
 .resume-container {
@@ -555,8 +550,6 @@ p {
 
 .footer > .container > .sub-heading {
     text-align: center;
-    font-size: 4rem;
-    padding: 3.6rem 0;
 }
 
 .footer {
@@ -569,6 +562,7 @@ p {
     align-items: center;
     justify-content: space-between;
     padding: 0;
+    margin-top: 2.4rem;
     /* border-bottom: 0.2rem solid #ffffff; */
 }
 
@@ -601,6 +595,7 @@ p {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    -webkit-text-fill-color: transparent;
     animation: text-gradient 5s ease-in-out infinite;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.326);
 }
